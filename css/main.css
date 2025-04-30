@@ -1,0 +1,223 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:"Tajawal";
+    direction: rtl;
+    background-color: #1d2023;
+}
+button{
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 3px 5px rgb(168, 168, 168, 0.38);
+    cursor: pointer;
+    text-align: center;
+}
+/* End Global Rules */
+
+/* Start Components */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 10px auto;
+}
+@media(max-width:767px){
+    .container{
+        width: 90%;
+    };
+
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+@media(max-width:767px) {
+    .circle{
+        width: 25px;
+        height: 25px;
+        font-size: small;
+    }
+}
+
+/* End Components */
+
+.table{
+    width: 100%;
+    background-color: #2c334f;
+    margin-top: 130px;
+}
+
+/*start Header*/
+header{
+    width: 100%;
+    text-align: center;
+    background-color: #2a2b2f;
+    color: white;
+    padding: 8px 0;
+}
+header h1{
+    display: inline;
+}
+@media(max-width:767px) {
+    header h1{
+        margin-left: 25px;
+        font-size: 25px;
+    }}
+
+.add{
+    float: right;
+    background-color: white;
+    margin-right: 10px;
+}
+
+@media(max-width:767px) {
+    .add{
+        margin-top: 8px;
+    }}
+/*End Header*/
+
+/*Start input*/
+.form{
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #292c31;
+    border: 3px solid #36383d;
+    border-radius: 10px;
+    display: none;
+    position: relative;
+}
+.cancel{
+    position: absolute;
+    left: -28px;
+    top: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+@media(max-width:767px){
+    .cancel{
+        position: unset;
+        font-size: 13px;
+        margin-right: 3px;
+    }
+}
+.txt,
+.creat{
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+.txt{
+    background-color: #292c31;
+    width: 78%;
+    outline: none;
+}
+@media(max-width:767px){
+    .txt{
+        width: 66%;
+        padding: 10px;
+        font-size: 15px
+    };
+
+}
+.creat{
+    background-color:#36383d ;
+    width: 20%;
+    box-shadow: none;
+    border-radius: 5px;
+}
+@media(max-width:767px) {
+    .creat{
+        width: 25%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+.creat:hover{
+    background-color: #45464a;
+}
+
+.edit-text{
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #292c31;
+    border: 3px solid #36383d;
+    border-radius: 10px;
+    display: none;
+    position: relative;
+}
+
+/*End input*/
+
+/*Start tasks info*/
+.tasks{
+    padding: 0 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #313336;
+    color: white;
+    border-bottom: 1px solid black;
+}
+.tasks:hover{
+    box-shadow: 0px 3px 15px rgb(97, 97, 97,0.843);
+}
+.task{
+    width: 70%;
+}
+.done{
+    opacity: 0.3;
+}
+.task h2{
+    margin: 5px 0;
+}
+@media(max-width:767px) {
+    .task h2,
+    .history{
+        font-size: 17px;
+    }
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+@media(max-width:767px) {
+    .actions button{
+        width: 25px;
+        height: 25px;
+        font-size: small;
+        margin-left: 2px;
+    }
+}
+.del{
+    background-color: rgb(114, 0, 0);
+    color: white;
+}
+.unfinish{
+background-color: rgb(100, 0, 0);
+color: white;
+}
+.finish{
+background-color: green;
+color: white;
+}
+.editt{
+    background-color: rgb(0, 16, 197, 0.692);
+    color: white;
+
+}
+/*End tasks info*/
